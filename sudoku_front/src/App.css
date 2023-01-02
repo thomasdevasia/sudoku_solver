@@ -1,0 +1,67 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+/* main puzzle */
+.puzzle {
+  display: flex;
+  flex-direction: column;
+}
+
+/* grid 3x3  */
+.puzzleBoard {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  /* grid-gap: 1px; */
+  border: 2px solid black;
+  width: 470px;
+  /* height: 450px; */
+}
+
+.puzzleCell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(230, 228, 228);
+  font-size: 20px;
+  font-weight: bold;
+  /* text-align: center; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzleCell:hover {
+  background-color: #e2ebf3;
+}
+
+.puzzleCell-select {
+  background-color: #bbdefb;
+}
+
+.puzzleNumbers {
+  margin: 2rem;
+  display: flex;
+}
+
+.puzzleNumbers button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(230, 228, 228);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzleNumbers button:hover {
+  background-color: #bbdefb;
+}

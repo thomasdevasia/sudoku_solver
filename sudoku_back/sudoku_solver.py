@@ -1,5 +1,3 @@
-import numpy as np
-
 class Sudoku:
     
     # Initialize the grid
@@ -50,7 +48,7 @@ class Sudoku:
         for num in range(1, 10):
             if self.is_valid(row, col, num):
                 self.grid[row][col] = num
-                print(np.matrix(self.grid))
+                # print(self.grid)
                 if self.solve():
                     return True
 

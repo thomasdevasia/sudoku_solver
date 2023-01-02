@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print(np.matrix(grid))
 
     sudoku = Sudoku(grid)
-    solved_grid = sudoku.solve_sudoku()
+    solved_grid = sudoku.solve()
 
     if solved_grid:
         print('Solved grid:')
